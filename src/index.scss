@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    width: 800px;
+ 	border: 1px solid green;
+  	padding: 50px;
+ 	margin: 20px;
+}
+
+@import "/components/heading/heading.scss";
+@import "/components/form/form.scss";
+@import "/components/list/list.scss";
+@import "/components/message/message.scss";

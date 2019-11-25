@@ -1,0 +1,23 @@
+.listtodo {
+	margin: auto 50px;
+	margin-top: 25px;
+	background: #3399ff;
+ 	padding: 50px;
+ 	width: 600px;
+ 	text-align: left;
+ 	list-style: none;
+}
+
+.item{
+	color:white;
+	background-image:  radial-gradient(#3399ff, #335dff);	
+	width: 100%;
+	margin: auto 15px;
+	margin-top: 15px;
+	font-size: 25px;
+}
+
+.delete {
+	cursor: pointer;
+	float: right;
+}
