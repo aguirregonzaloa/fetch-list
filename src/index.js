@@ -18,7 +18,19 @@ form.render();
 
 const msgSuccess = new Message('success');
 const msgLoading = new Message('loading');
-msgLoading.render('Loading...');
+msgLoading.render('Loading');
+
+const loadingDOM = document.querySelector('.loading');
+const divclasslist = document.createElement('div');
+divclasslist.classList.add('lds-ellipsis');
+loadingDOM.appendChild(divclasslist);
+
+const dot1 = document.createElement('div');
+const dot2 = document.createElement('div');
+const dot3 = document.createElement('div');
+divclasslist.appendChild(dot1);
+divclasslist.appendChild(dot2);
+divclasslist.appendChild(dot3);
 
 const msgError = new Message('danger');
 
