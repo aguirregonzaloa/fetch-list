@@ -3,15 +3,29 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
+html {
+	font-size: 62.5%; /* 1rem = 10px */ 
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
 body {
-    box-sizing: border-box;
-    width: 800px;
+    width: 95%;
+    height: 95vh;
  	border: 1px solid green;
-  	padding: 50px;
- 	margin: 20px;
+  	padding: 5rem;
+ 	margin: 2rem;
 }
 
 @import "/components/heading/heading.scss";
